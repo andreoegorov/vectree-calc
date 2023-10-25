@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* ,
+*::before,
+*::after {
+  	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Inter',sans-serif;
+	background: linear-gradient(to left,#fafdd1, #f4a1ff);
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}	
+
+button {
+	height: 70px;
+	width: 90px;
+	border: 2px rgb(102, 102, 102) solid;
+	border-radius: 10px;
+	font-size: 30px;
+	font-family: 'Inter',sans-serif;
+	transition: .3s background ease-out;
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  transition: 1s all ease-out;
+}
+button[disabled]:hover{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.number, #dot{
+	background-color: white;
+}
+.number:hover {
+	background: #ffcef0;
+}
+.number:active {
+	background-color: #ff8adc;
+}
+
+.function {
+	background-color: #fdcfc4;
+}
+.function:hover {
+	background-color: #ff83d9;
+}
+.function:active {
+	background-color: #f55497;
+}
+
+.equals{
+	background-color: #beffc6;
+}
+.equals:hover {
+	background-color: #81ff92;
+}
+.equals:active {
+	background-color: #21ff3f;
+}
+
+#frame {
+	height:650px;
+	width: 402px;
+	margin: auto;
+	margin-top: 100px;
+	user-select: none;
+	border: 2px rgb(75, 75, 75) solid;
+	border-radius: 15px;
+	box-shadow: 0 0 20px #7a7a7a;
+	z-index: -1;
+}
+
+#header {
+	margin: 15px 12px;
+}
+
+#display {
+	height:80px;
+	width: 94%;
+	margin: auto;
+	padding: 10px;
+	border: 3px rgb(255, 255, 255) solid;
+	border-radius: 10px;
+	background-color: #f9ffa8;
+	text-align: right;
+}
+
+#additional-string {
+	margin-right: 4px;
+	font-size: 14px;
+}
+
+#main-string {
+	font-size: 42px;
+	font-weight: bold;
+}
+
+#buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 90px);
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	gap: 5px;
+	margin: 15px;
+	padding-top:20px;
+}
+
+
+#dot:disabled,
+#dot[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  transition: 1s all ease-out;
+}
+#dot[disabled]:hover{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#dot:hover {
+	background: #ffcef0;
+}
+#dot:active {
+	background: #ffcef0;
+}
